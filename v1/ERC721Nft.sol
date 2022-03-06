@@ -24,7 +24,6 @@ contract NFT is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard  {
     bool private paused = false;
     uint256 private cost; // = 0.01 ether
     uint256 private ID = 1;
-    // uint256 public max;
     string public uriJson = '.json';
     string public uriPath; // test: QmUcMue4sM7FiJJRmPcU6eFQZMDVYW8CFe49feeBijj2Fd/
 
@@ -58,7 +57,6 @@ contract NFT is ERC721, ERC721URIStorage, Ownable, ReentrancyGuard  {
     }
 
     function mint(uint256 _mintAmount) public payable notPause {
-        // _safeMint(_msgSender(), _mintAmount);
         _safeMint(_msgSender(), _mintAmount, '');
         ID += 1;
     }
