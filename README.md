@@ -1,5 +1,12 @@
-# erc721
-ERC721 simple , Trial &amp; expermential
+# ERC721 - NFT
+ERC721 NFT => simple , Trial &amp; expermential
+
+##
+
+under user experiance
+### disclaimer:
+  - the code is trial & expermential.
+  - run this at your risk.
 
 ##
 
