@@ -11,4 +11,29 @@ this contract included nft releations, Nft wallet & erc20 wallet.
 - maximum number of your items
 
 ### prerequire:
-a folder of jsons would be on that cid hash.
+- json -would be in a folder & uploaded on ipfs
+
+### disclaimer
+- this repo for study perpuses for my students.
+- expermential codes 
+- use is/as/on product at your risk
+
+### example for json
+```
+{
+    "name": "Item name here",
+    "description": "description of artwork/utility here",
+    "image": "https://bafy0000000000000000000000000000wbo4.ipfs.dweb.link/thumbnail.png",
+    "attributes": [
+        {
+            "trait_type": "Collection",
+            "value": "IC"
+        },
+        {
+            "trait_type": "Creator",
+            "value": "Mosi"
+        }
+    ],
+    "compiler": "MOSi Encrypt",
+    }
+```
