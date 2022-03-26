@@ -10,6 +10,10 @@ under user experiance
 
 ##
 
+### Ver4 = Nft contract included nft&erc20 wallet.
+
+##
+
 video in farsi - youtube link: 
 
 ##
