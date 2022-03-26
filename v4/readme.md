@@ -1,27 +1,27 @@
-## custom type for bulk mint
+## Custom type for bulk mint
 
-this contract included nft releations, Nft wallet & erc20 wallet.
-
+- this contract included nft releations
+-  Nft wallet & erc20 wallet
 - flat version updated/added to repository
 
 ##
 
-### at deploy time recomended: 
+### At deploy time recomended: 
 - cid ( hash link of ipfs without any space slash backslash hyphen )
 - maximum number of your items
 
-
-### prerequire:
+##
+### Prerequire:
 - json -would be in a folder & uploaded on ipfs
 
-
-### disclaimer
+##
+### Disclaimer **
 - this repo for study perpuses for my students.
 - expermential codes 
 - use is/as/on product at your risk
 
-
-### example for json
+##
+### Example for json
 
 ```
 {
