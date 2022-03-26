@@ -10,7 +10,8 @@ under user experiance
 
 ##
 
-### Ver4 = Nft contract included nft&erc20 wallet.
+### Ver4 
+Nft contract included nft&erc20 wallet.
 
 ##
 
