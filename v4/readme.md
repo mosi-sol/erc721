@@ -10,15 +10,19 @@ this contract included nft releations, Nft wallet & erc20 wallet.
 - cid ( hash link of ipfs without any space slash backslash hyphen )
 - maximum number of your items
 
+
 ### prerequire:
 - json -would be in a folder & uploaded on ipfs
+
 
 ### disclaimer
 - this repo for study perpuses for my students.
 - expermential codes 
 - use is/as/on product at your risk
 
+
 ### example for json
+
 ```
 {
     "name": "Item name here",
@@ -34,6 +38,6 @@ this contract included nft releations, Nft wallet & erc20 wallet.
             "value": "Mosi"
         }
     ],
-    "compiler": "MOSi Encrypt",
-    }
+    "compiler": "MOSi Encrypt"
+  }
 ```
