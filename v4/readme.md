@@ -2,6 +2,8 @@
 
 this contract included nft releations, Nft wallet & erc20 wallet.
 
+- flat version updated/added to repository
+
 ##
 
 ### at deploy time recomended: 
