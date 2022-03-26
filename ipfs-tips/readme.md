@@ -32,3 +32,8 @@ ipfs://QCID/
 ##
 ### what is bCID & QCID
 different type of ipfs uri schema, (Q) is resources before the link lunched in gateway, after that link changed to (b)
+
+### important
+- dweb automaticaly change Q to b
+- ipfs source always would be Q
+- ipfs not ipns
