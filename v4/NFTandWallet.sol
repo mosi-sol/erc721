@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-/// @custom:contact mosipvp@gmail.com
+/// @custom:security-contact mosipvp@gmail.com
 contract ERC721NFT is ERC721, Pausable, Ownable, ERC721Burnable, ReentrancyGuard {
     using Counters for Counters.Counter;
     using Strings for uint256;
@@ -27,14 +27,15 @@ contract ERC721NFT is ERC721, Pausable, Ownable, ERC721Burnable, ReentrancyGuard
     constructor(
         string memory _cid,
         uint256 _max
-        ) ERC721("ERC721NFT", "MYNFT") {
+        ) ERC721("Show Time", "ST") {
         cidURI = _cid;
         maxCount = _max;
         safeMint(msg.sender);
     }
 
     function _baseURI() internal pure override returns (string memory) {
-        return "https://gateway.ipfs.io/ipfs/";
+        // return "https://gateway.ipfs.io/ipfs/";
+        return "https://ipfs.io/ipfs/";
     }
 
     function pause() public onlyOwner {
@@ -86,7 +87,7 @@ contract ERC721NFT is ERC721, Pausable, Ownable, ERC721Burnable, ReentrancyGuard
     // wallet section: erc721
     function receiveNft(ERC721 _nft, uint id) external {
         require(msg.sender == _nft.ownerOf(id),"just real owner");
-        // _nft.setApprovalForAll(address(this), true); // this is by sender from contract address
+        // _nft.setApprovalForAll(address(this), true); // this is by sender from contract address.1- handly, 2- signature
         _nft.approve(address(this), id);
         _nft.transferFrom(msg.sender, address(this), id);
         nftOwner[covrage] = msg.sender;
