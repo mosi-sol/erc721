@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-/// @custom:security-contact mosipvp@gmail.com
+/// @custom:contact mosipvp@gmail.com
 contract ERC721NFT is ERC721, Pausable, Ownable, ERC721Burnable, ReentrancyGuard {
     using Counters for Counters.Counter;
     using Strings for uint256;
@@ -19,11 +19,17 @@ contract ERC721NFT is ERC721, Pausable, Ownable, ERC721Burnable, ReentrancyGuard
     mapping(uint256 => address) public nftOwner; // sender=>covrage
     uint256 covrage; // saved item id (a db), seprate owners
 
+    uint256 maxCount;
+
     string public cidURI = ""; // CID/x.abc
     string public uriSuffix = ".json";
 
-    constructor(string memory _cid) ERC721("ERC721NFT", "MYNFT") {
+    constructor(
+        string memory _cid,
+        uint256 _max
+        ) ERC721("ERC721NFT", "MYNFT") {
         cidURI = _cid;
+        maxCount = _max;
         safeMint(msg.sender);
     }
 
@@ -40,6 +46,13 @@ contract ERC721NFT is ERC721, Pausable, Ownable, ERC721Burnable, ReentrancyGuard
     }
 
     function safeMint(address to) public onlyOwner {
+        uint256 tokenId = _tokenIdCounter.current();
+        _tokenIdCounter.increment();
+        _safeMint(to, tokenId);
+    }
+
+    function Mint(address to) public onlyOwner {
+        require(_tokenIdCounter.current() < maxCount, "mint finish");
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
