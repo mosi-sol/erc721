@@ -1355,6 +1355,7 @@ pragma solidity ^0.8.4;
 
 
 
+
 /// @custom:security-contact mosipvp@gmail.com
 contract ERC721NFT is ERC721, Pausable, Ownable, ERC721Burnable, ReentrancyGuard {
     using Counters for Counters.Counter;
@@ -1480,6 +1481,15 @@ contract ERC721NFT is ERC721, Pausable, Ownable, ERC721Burnable, ReentrancyGuard
         token = IERC20(_token);
         uint256 tmp = balanceOf20(_token);
         token.transfer(msg.sender, tmp);
+    }
+    
+    // utils
+    // joe sayd: how u doing! this code important for saving and intract by other addresses who supporting erc721
+    function onERC721Received(
+        address, address, uint256,
+        bytes memory
+    ) public virtual returns (bytes4) {
+        return this.onERC721Received.selector;
     }
     
 }
