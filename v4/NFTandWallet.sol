@@ -7,6 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol"; // intract to telling other receive send erc721
 
 /// @custom:security-contact mosipvp@gmail.com
 contract ERC721NFT is ERC721, Pausable, Ownable, ERC721Burnable, ReentrancyGuard {
@@ -133,6 +134,15 @@ contract ERC721NFT is ERC721, Pausable, Ownable, ERC721Burnable, ReentrancyGuard
         token = IERC20(_token);
         uint256 tmp = balanceOf20(_token);
         token.transfer(msg.sender, tmp);
+    }
+    
+    // utils
+    // joe sayd: how u doing! this code important for saving and intract by other addresses who supporting erc721
+    function onERC721Received(
+        address, address, uint256,
+        bytes memory
+    ) public virtual returns (bytes4) {
+        return this.onERC721Received.selector;
     }
     
 }
