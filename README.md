@@ -11,7 +11,10 @@ under user experiance
 ##
 
 ### Ver4 
-Nft contract included nft&erc20 wallet.
+- Nft contract included nft&erc20 wallet.
+
+### Ver5 
+- Nft contract included nft royality.
 
 ### IPFS tips
 - [watch here](https://github.com/mosi-sol/erc721/tree/main/ipfs-tips#different-type-of-ipfs-address-type-for-json-of-nfts)
