@@ -12,7 +12,7 @@
 - URIPREFIX = hash code from IPFS -> Cid
 
 ### Prerequire:
-- json -would be in a folder & uploaded on ipfs
+- json -would be in a folder & uploaded on [ipfs](https://github.com/mosi-sol/erc721/tree/main/ipfs-tips#different-type-of-ipfs-address-type-for-json-of-nfts)
 
 ### Disclaimer **
 - this repo for study perpuses for my students.
