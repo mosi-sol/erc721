@@ -11,6 +11,34 @@
 - ROYALITY = as a percntage -> 100000 = 100% -> 10000 = 10% 
 - URIPREFIX = hash code from IPFS -> Cid
 
+### Prerequire:
+- json -would be in a folder & uploaded on ipfs
+
+### Disclaimer **
+- this repo for study perpuses for my students.
+- expermential codes 
+- use is/as/on product at your risk
+
+### Example for json
+
+```
+{
+    "name": "Item name here",
+    "description": "description of artwork/utility here",
+    "image": "https://bafy0000000000000000000000000000wbo4.ipfs.dweb.link/thumbnail.png",
+    "attributes": [
+        {
+            "trait_type": "Collection",
+            "value": "IC"
+        },
+        {
+            "trait_type": "Creator",
+            "value": "Mosi"
+        }
+    ],
+    "compiler": "MOSi Encrypt"
+  }
+```
 ##
 
 watch other erc721 version [here](https://github.com/mosi-sol/erc721)
