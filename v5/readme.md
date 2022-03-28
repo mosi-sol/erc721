@@ -12,7 +12,7 @@
 
 ##
 
-watch this version [here](https://github.com/mosi-sol/erc721/tree/main/v5)
+watch other erc721 version [here](https://github.com/mosi-sol/erc721)
 
 ##
 
