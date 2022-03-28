@@ -3,6 +3,7 @@
 - - bulk mint
 - - royality
 - - air drop
+- included flat version
 
 ### how to deploy & info
 - MAXSUPPLY = maximum items mintable
