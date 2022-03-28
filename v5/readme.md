@@ -17,7 +17,7 @@
 ### Disclaimer **
 - this repo for study perpuses for my students.
 - expermential codes 
-- use is/as/on product at your risk
+- use is/as/on product at your own risk
 
 ### Example for json
 
