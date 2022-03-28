@@ -16,7 +16,7 @@ contract NftBase is ERC721Royalty, Pausable, Ownable, ReentrancyGuard {// ERC721
 
     Counters.Counter private _tokenIdCounter;
 
-    string public uriPrefix = "";
+    string public uriPrefix = "_CID_";
     string public uriSuffix = ".json";
     uint256 public maxSupply;
     uint256 private price;
@@ -44,6 +44,7 @@ contract NftBase is ERC721Royalty, Pausable, Ownable, ReentrancyGuard {// ERC721
     }
 
     function airdropMint(address to) public onlyOwner whenNotPaused {
+        require(uint256(_tokenIdCounter.current()) < maxSupply, "mint finish");
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
@@ -59,6 +60,10 @@ contract NftBase is ERC721Royalty, Pausable, Ownable, ReentrancyGuard {// ERC721
 
     function burn(uint256 tokenId) public {
         _burn(tokenId);
+    }
+
+    function setCost(uint256 _newCost) public onlyOwner {
+        price = _newCost;
     }
 
     // royality
@@ -86,9 +91,10 @@ contract NftBase is ERC721Royalty, Pausable, Ownable, ReentrancyGuard {// ERC721
         "ERC721Metadata: URI query for nonexistent token"
         );
 
+        string memory gateway = "ipfs://";
         string memory currentBaseURI = _baseURI();
         return bytes(currentBaseURI).length > 0
-            ? string(abi.encodePacked(currentBaseURI, _tokenId.toString(), uriSuffix))
+            ? string(abi.encodePacked(gateway, currentBaseURI, "/", _tokenId.toString(), uriSuffix))
             : "";
     }
 
@@ -101,7 +107,7 @@ contract NftBase is ERC721Royalty, Pausable, Ownable, ReentrancyGuard {// ERC721
     }
 
     function _baseURI() internal view virtual override returns (string memory) {
-        return uriPrefix; // return "ipfs://";
+        return uriPrefix; // set/put "cidHashHere" from setUriPrefix()
     }
     // uri end
 
