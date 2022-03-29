@@ -10,6 +10,7 @@
 - PRICE = per item (in wei)
 - ROYALITY = as a percntage -> 100000 = 100% -> 10000 = 10% 
 - URIPREFIX = hash code from IPFS -> Cid
+- Example -> [here](https://mumbai.polygonscan.com/address/0x56E782004A64faA9f10eD66c02F536F29eCc6f2D)
 
 ### Prerequire:
 - json -would be in a folder & uploaded on [ipfs](https://github.com/mosi-sol/erc721/tree/main/ipfs-tips#different-type-of-ipfs-address-type-for-json-of-nfts)
