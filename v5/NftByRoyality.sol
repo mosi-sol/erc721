@@ -54,6 +54,7 @@ contract NftBase is ERC721Royalty, Pausable, Ownable, ReentrancyGuard {// ERC721
         require(uint256(_tokenIdCounter.current()) < maxSupply, "mint finish");
         require(msg.value >= price,"abda says: money money money!");
         uint256 tokenId = _tokenIdCounter.current();
+        // _tokenIdCounter.increment();
         thePrice[tokenId] = price;
         _safeMint(to, tokenId);
     }
