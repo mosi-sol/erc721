@@ -3,10 +3,10 @@ ERC721 NFT => simple , Trial &amp; expermential
 
 ##
 
-under user experiance
+*under user experiance*
 ### disclaimer:
   - the code is trial & expermential.
-  - run this at your risk.
+  - run these codes at your own risk.
 
 ##
 
