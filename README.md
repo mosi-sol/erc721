@@ -27,6 +27,12 @@ read more [here](https://github.com/mosi-sol/erc721/blob/main/v6/readme.md#what-
 
 ##
 
+### idea`s
+- Adding { Max Mint Amount Per Wallet }
+- Adding { Mint For Address function } like **WhiteList** or *manually for other*
+
+---
+
 video in farsi - youtube link: 
 
 ##
