@@ -1,5 +1,5 @@
 # ERC721 - NFT
-ERC721 NFT => simple , Trial &amp; expermential
+**ERC721 NFT** => *simple , Trial &amp; expermential*
 
 ## More important information
 read more [here](https://github.com/mosi-sol/erc721/blob/main/v6/readme.md#what--why) 
