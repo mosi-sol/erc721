@@ -23,3 +23,8 @@ constructor(string memory _name, string memory _symbol) ERC721(_name, _symbol) {
     symbol = _symbol;
 }
 ```
+### todo
+declearing code below from the main or final contract to the `ERC721 contract` section
+```solidity
+function supportsInterface(bytes4 interfaceId) external override view returns (bool){}
+```
