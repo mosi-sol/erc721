@@ -13,7 +13,7 @@ contract Main is ERC721 {
 }
 ```
 
-### how to  for all
+### how to final developer/developing
 `import "https://github.com/mosi-sol/erc721/blob/main/v6/ERC721Releation.sol";`
 
 make your own just remember:
