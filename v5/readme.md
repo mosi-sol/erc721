@@ -28,7 +28,7 @@
 
 ### Example for json
 
-```
+```json
 {
     "name": "Item name here",
     "description": "description of artwork/utility here",
