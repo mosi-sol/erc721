@@ -8,10 +8,11 @@ using safeMint function for create new NFT, first argument is wallet address, se
 
 ## 
 ** disclaimer
-- don`t use in your product, because this is for education perpuses.
+- don't use in your product, because this is for education perpuses.
 
-```
-the code exactly created by wizard of openzeppelin.
-simple and easy can make nfts by basic resources.
-this is cool for everyone to become a developer.
-```
+`the code exactly created by wizard of openzeppelin.`
+
+`simple and easy can make nfts by basic resources.`
+
+`this is cool for everyone to become a developer.`
+
