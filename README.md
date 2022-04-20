@@ -22,6 +22,9 @@ read more [here](https://github.com/mosi-sol/erc721/blob/main/v6/readme.md#what-
 ### Ver6 
 - Nft contract included releationship between [ERC165](https://eips.ethereum.org/EIPS/eip-165), [ERC721](https://eips.ethereum.org/EIPS/eip-721), [ERC721Receiver](https://github.com/nibbstack/erc721/blob/master/src/contracts/tokens/erc721-token-receiver.sol) and why use those .
 
+### Ver7
+- Random mint { by using onchain data }
+
 ### IPFS tips
 - [watch here](https://github.com/mosi-sol/erc721/tree/main/ipfs-tips#different-type-of-ipfs-address-type-for-json-of-nfts)
 
