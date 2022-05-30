@@ -11,6 +11,11 @@
 - ROYALITY = as a percntage -> 100000 = 100% -> 10000 = 10% 
 - URIPREFIX = hash code from IPFS -> Cid
 
+### change to use
+- `line 62` = check for item owner
+- `line 71` = only owner(creator)
+- `line 79` = only owner(creator)
+- `line 83` = only owner(creator)
 
 ### verified example
 - POLYGON -> [here](https://mumbai.polygonscan.com/address/0x56E782004A64faA9f10eD66c02F536F29eCc6f2D)
