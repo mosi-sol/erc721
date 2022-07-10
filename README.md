@@ -28,6 +28,9 @@ read more [here](https://github.com/mosi-sol/erc721/blob/main/v6/readme.md#what-
 ### IPFS tips
 - [watch here](https://github.com/mosi-sol/erc721/tree/main/ipfs-tips#different-type-of-ipfs-address-type-for-json-of-nfts)
 
+### Utility: Membership
+- erc721 & erc1155 for using is/as ticket, membership, etc -> [here](https://github.com/mosi-sol/erc721/tree/main/Utility%20Membership) 
+
 ##
 
 ### idea`s
