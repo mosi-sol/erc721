@@ -14,4 +14,6 @@
 
 use this metodology, pattern for make or use an nft for : ticket, key for locks, membership, etc...
 
+**how to use:** deploy mock, then contract . contract need mock address(some times nft id) as value.
+
 > 11 jul 2022 - live stream
