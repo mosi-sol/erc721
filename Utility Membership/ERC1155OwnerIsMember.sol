@@ -23,7 +23,7 @@ contract NftForMembers is ERC721, Ownable {
 
     //********************************************//
     event IsValidMember(address member);
-    event NewValidator(address _nft);
+    event NewValidator(address _nft, uint _id);
 
     modifier validMember() {
         require(isMember() == true);
@@ -33,7 +33,7 @@ contract NftForMembers is ERC721, Ownable {
     function changeTicket(address _nft, uint _id) public onlyOwner {
         keyNft = IERC1155(_nft);
         id = _id;
-        emit NewValidator(_nft);
+        emit NewValidator(_nft, _id);
     }
 
     function isMember() internal view returns (bool) {
